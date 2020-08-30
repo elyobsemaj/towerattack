@@ -2,8 +2,9 @@ class GameScene extends Phaser.Scene {
 	constructor(){
 		super({ key: 'GameScene' })
 	}
-
-	preload() {
+const graphics;
+const path;
+preload() {
 		this.load.image('bug1', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_1.png');
 		this.load.image('bug2', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_2.png');
 		this.load.image('bug3', 'https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_3.png');
@@ -12,10 +13,19 @@ class GameScene extends Phaser.Scene {
 	}
 
 
-	create() {
+create() {
+        const graphics = this.add.graphics();
+        path = this.add.path(96, -32);
+    path.lineTo(96,164);
+    path.lineTo(480,164);
+    path.lineTo(480,544);
+    
+    graphics.lineStyle(3, 0xffffff, 1);
+    path.draw(graphics)
 	}
 
-	update() {
+update() {
         
 	}
 }
+
