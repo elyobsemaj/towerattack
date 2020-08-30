@@ -13,6 +13,7 @@ const config = {
 			gravity: { y: 200 },
 			enableBody: true,
 		}
+	},
 	scene: [StartScene, GameScene]
 };
 
