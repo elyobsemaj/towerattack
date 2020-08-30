@@ -1,5 +1,5 @@
 const gameState = {
-	
+	score: 0
 };
 
 const config = {
