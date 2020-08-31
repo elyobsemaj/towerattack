@@ -16,7 +16,7 @@ create() {
 
 		const platforms = this.physics.add.staticGroup();
 
-		platforms.create(225, 640, 'platform').setScale(1, .3).refreshBody();
+		platforms.create(225, 490, 'platform').setScale(1, .3).refreshBody();
 
 		gameState.scoreText = this.add.text(195, 485, 'Score: 0', { fontSize: '15px', fill: '#000000' });
 
